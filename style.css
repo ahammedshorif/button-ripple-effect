@@ -21,6 +21,7 @@ body{
 .btn span{
     position: relative;
     z-index: 1;
+    color: black;
 }
 
 .btn::before{
@@ -29,8 +30,8 @@ body{
    background-color: rgb(19, 195, 157);
    width: 0px;
    height: 0px;
-   left: 50%;
-   top: 50%;
+   left: var(--xPos);
+   top: var(--yPos);
    transform: translate(-50%, -50%);
    border-radius: 50%;
    transition: width .7s, height .7s;
